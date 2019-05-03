@@ -92,6 +92,13 @@ html, body {
   font-family: Roboto, sans-serif;
 }
 
+#card-item-container {
+  visibility: visible;
+}
+#image-container {
+  position: relative;
+}
+
 @media only screen and (max-width: 992px) {
   #head-container {
     text-align: center;
