@@ -6,7 +6,7 @@ for(i = 0; i < 21; i++){
 }
 
 initGender = async () => {
-  MODEL_GENDER = await tf.loadModel("./model/gender_trained/model.json");
+  MODEL_GENDER = await tf.loadModel("./model/gender/model.json");
   console.log("Model Gender Loaded");
 
   //Warm up network

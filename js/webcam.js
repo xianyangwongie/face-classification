@@ -53,7 +53,9 @@ TRACKER.on('track', function(faces) {
     var result_emotion = getResultEmotion(CANVAS_FACE_GREY_SMALL);
  
     $('#age').text(result_gender_age.age.label)
-    $('#gender').text(result_gender_age.gender.label)
+    if(result_gender_age.gender.percent >= 70 ){
+        $('#gender').text(result_gender_age.gender.label)
+    }
     $('#emotion').text(result_emotion.label)
 });
 
